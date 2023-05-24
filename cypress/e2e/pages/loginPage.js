@@ -1,5 +1,11 @@
 class LoginPage {
 
+
+    constructor(){
+
+        this.class_name ="LoginPage";
+    }
+
     login = {
         email: () => cy.get('[id="input-email"]').should('exist'),
         password: () => cy.get('[id="input-password"]').should('exist'),
@@ -30,3 +36,13 @@ class LoginPage {
     }
 }
 export default LoginPage;
+
+const classes = {
+    LoginPage
+}
+
+class DynamicClass {
+    constructor(class_name) {
+        return new classes[class_name]();
+    }
+}
