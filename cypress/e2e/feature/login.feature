@@ -12,6 +12,7 @@ Feature:  I want to login into the site with valid data
     Scenario: Login as new sign up user with valid data
         Then i am on "LoginPage"
         Then i click on "signInButton"
+        
 
 
 

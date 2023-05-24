@@ -18,10 +18,10 @@
       "enabled": true,
       "output": "cypress/Reports/cucumber-reports/cucumberResult.json"
     },
-    "nonGlobalStepDefinitions": true,
+    "nonGlobalStepDefinitions": false,
     "stepDefinitions": [
-      "cypress/e2e/step_definations/*.{js,ts}",
-      "cypress/e2e/common/.{js,ts}",
+      "cypress/e2e/app_ui_stepdefs/*.{js,ts}",
+      "cypress/support/cypress_ui_stepdefs/*.{js,ts}",
       "cypress/e2e/[filepath]/**/*.{js,ts}",
       "cypress/e2e/[filepath].{js,ts}"
     ]

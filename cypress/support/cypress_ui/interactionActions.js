@@ -3,7 +3,7 @@
 class InteractionActions {
 
 
-    openURL(url){
+    openURL(){
     try {
     cy.visit(Cypress.env('baseURL'))
     } catch (error) {

@@ -21,7 +21,7 @@ Given('i navigate to the Website',()=>{
   return this;
 })
 
-When ('when i am on {string} page',(pageName)=>{
+Then ('i am on {string}',(pageName)=>{
 
   var class_obj = new DynamicClass(pageName);
 })
